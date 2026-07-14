@@ -5,6 +5,7 @@ This is one of the most important sessions because every AI application uses con
 
 Think about it:
 
+
 ChatGPT deciding whether to call a tool.
 An AI agent checking if a user is authenticated.
 A RAG system deciding whether to search a vector database.

@@ -198,7 +198,6 @@ print(a % b)
 print(a ** b)
 
 What do these mean?
-
 / → Normal division
 
 10 / 3 = 3.3333

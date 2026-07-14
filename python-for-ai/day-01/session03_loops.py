@@ -9,6 +9,7 @@ Imagine there were no loops.
 
 You want to print:
 
+
     Welcome
 
 10 times.
