@@ -245,12 +245,3 @@ Small, consistent progress every day will eventually lead to mastery.
 
 ---
 
-## 🚀 Next Milestone
-
-➡️ Complete **Day 02 – Functions & Modular Programming**
-
-Then continue building toward becoming a professional AI Engineer.
-
----
-
-> **"Don't chase frameworks. Build fundamentals. Strong fundamentals make every future technology easier to learn."**
