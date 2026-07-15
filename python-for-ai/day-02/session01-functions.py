@@ -12,6 +12,8 @@ This session covers Python Functions from first principles.
 Instead of memorizing syntax, the focus is on understanding why
 functions exist, how Python executes them, and how they help us
 write reusable and maintainable software.
+----------------------
+
 ===============================================================================
 """
 
