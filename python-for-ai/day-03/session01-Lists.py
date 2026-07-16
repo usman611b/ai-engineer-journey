@@ -732,3 +732,47 @@ students = ["Usman", "Ali", "Ahmed"]
 students.clear()
 print(students)  # []
 
+# List Slicing
+
+"""
+List slicing allows you to extract a portion of a list.
+The syntax is: list[start:stop:step]
+"""
+
+students = ["Usman", "Ali", "Ahmed", "Hamza"]
+
+# Extract the first two students
+print(students[0:2])
+
+# Extract all students except the first one
+print(students[1:4])
+
+# Extract every second student
+print(students[::2])
+
+# Extract the last two students
+print(students[-2:])
+
+# from index 2 to the end
+print(students[2:])
+
+print(numbers[:3])
+"""
+This will output: [10, 20, 30] why because the slice numbers[:3] means "start from the beginning of the list and go up to, but not including, index 3." 
+"""
+
+
+# count()
+
+"""It returns the number of occurrences of an element in the list."""
+numbers = [1, 2, 3, 2, 4, 2]
+print(numbers.count(2))  # Output: 3
+
+# index()
+
+"""It returns the index of the first occurrence of an element in the list."""
+numbers = [1, 2, 3, 2, 4, 2]
+print(numbers.index(2))  # Output: 1
+
+numbers = [10,20,30,40,50]
+
