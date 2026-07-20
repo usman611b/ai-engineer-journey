@@ -437,3 +437,55 @@ It simply says:
 "Whoever called me, I'll work with that object."
 
 That's why one method can work for thousands of objects."""
+
+# Final Example of Class and Object
+class Calculator:
+    def __init__(self, num1, num2):
+        self.num1 = num1
+        self.num2 = num2
+
+    def add(self):
+        return self.num1 + self.num2
+
+    def subtract(self):
+        return self.num1 - self.num2
+    
+calc = Calculator(10, 5)
+print("Addition:", calc.add())        # Output: Addition: 15
+print("Subtraction:", calc.subtract())  # Output: Subtraction: 5
+
+# Instance Variable vs Local Variable:
+# Instance variable is a variable that belongs to an instance of a class. It is defined inside the __init__ method and is prefixed with self. It is associated with the instance of the class and can be accessed using self.variable_name.
+#It remains the same for the lifetime of the object and can be accessed by any method within the class.
+
+
+# Local variable is a variable that is belong to Methods or function and is defined inside a method and is not prefixed with self. It is only accessible within that method and cannot be accessed outside of it.
+#It is created when the method is called and destroyed when the method exits. It is not associated with any instance of the class and cannot be accessed by other methods within the class.
+
+#Example of Instance Variable vs Local Variable
+class Example:
+    def __init__(self, value):
+        self.instance_variable = value  # This is an instance variable
+
+    def method(self):
+        local_variable = 10  # This is a local variable
+        print("Instance Variable:", self.instance_variable)
+        print("Local Variable:", local_variable)  
+
+# Return Value from Method
+#Python methods can return values using the return statement. When a method is called, it can perform operations and return a result to the caller. The returned value can be stored in a variable or used directly in expressions.
+# Example of Return Value from Method
+class Student:
+
+    def calculate(self):
+        return 100
+
+    def display(self):
+        marks = self.calculate()
+        print(marks)
+
+student = Student()
+student.display()  
+
+
+
