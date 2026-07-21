@@ -370,6 +370,31 @@ to respond differently to the same method call.
 
 ---------------------------------
 
+
+Q - Why we need it ?
+We use polymorphism so we don't have to keep changing our code every time a new class is added.
+
+or
+
+We use polymorphism to write one piece of code that works with many different objects.
+
+That's the biggest benefit.
+
+with just this lineof code 
+animal = [Dog(), Cat(), Lion()]
+for animal in animals:
+    animal.sound()
+
+as amany as classes we add it works with all of them.
+
+rather than writing 100 if else statements for 100 classes.
+example
+dog.sound()
+cat.sound()
+lion.sound()
+that's not a good way to write code.
+
+
 Q. Difference between Overriding and Polymorphism?
 
 Overriding:
