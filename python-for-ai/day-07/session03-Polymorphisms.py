@@ -368,7 +368,7 @@ Q. What is Polymorphism?
 Polymorphism is the ability of different objects
 to respond differently to the same method call.
 
----------------------------------
+--------------------------------------
 
 
 Q - Why we need it ?
