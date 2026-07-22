@@ -531,7 +531,39 @@ def process_data(data):
 
 """You can't write that cleanly as a generator expression"""
 
+#Difference Between Generator Function and Iterator Function
 
+"""Generator Function
+
+A function that uses yield to produce values one at a time. When called, it returns a generator object.
+
+Iterator
+
+An object that remembers its current position and returns one item at a time using next()."""
+"""
+A generator object is an iterator, but not every iterator is a generator.
+
+For example:
+
+numbers = [1, 2, 3]
+
+it = iter(numbers)
+
+it is an iterator, but it is not a generator.
+
+Whereas:
+
+def numbers():
+    yield 1
+    yield 2
+
+gen = numbers()
+
+gen is both:
+
+✅ a generator
+✅ an iterator
+"""
 
 
 
