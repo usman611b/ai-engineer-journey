@@ -7,7 +7,7 @@ AI Engineer ✅
 Data Scientist ✅
 Automation Engineer ✅
 
-You'll use Python packages every single day...
+You'll use Python packages every single day....
 Imagine this situation
 
 You have two AI projects.
