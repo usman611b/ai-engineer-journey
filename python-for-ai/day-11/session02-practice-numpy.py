@@ -50,7 +50,7 @@ print(arr3[1,1,3])
 print(arr3[0,0,3])
 print(arr3[1,0,1])
 
-#Slicing..
+#Slicing...
 print(arr3[0,: , : ])
 print(arr3[1,: , : ])
 print(arr3[1,0:3 ,0 :2])
