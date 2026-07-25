@@ -161,3 +161,25 @@ print(linspace_2d)
 linspace_1d_negative = np.linspace(10, 0, 5)  # 5 evenly spaced values from 10 to 0
 print(linspace_1d_negative)
 
+"""arange()
+
+"I know the gap between values."
+
+Example:
+
+0, 5, 10, 15, 20
+
+Gap = 5.
+
+linspace()
+
+"I know how many values I want."
+
+Example:
+
+Start = 0
+End = 20
+Need 5 numbers
+
+NumPy calculates the spacing automatically."""
+
