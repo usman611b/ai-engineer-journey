@@ -15,7 +15,7 @@ import numpy as np
 
 arr = np.array([[1, 2], [3, 4]])
 determinant = np.linalg.det(arr)    
-print("Determinant:", determinant)  # Output: Determinant: -2.0
+print("Determinant:", determinant)  # ..Output: Determinant: -2.0
 
 #Visually, it looks like this:
 # Original Matrix   
@@ -155,7 +155,7 @@ print("Transpose:\n", transpose)
 print("Norm:", norm)
 print("Trace:", trace)
 
-#Example of using multiple linear algebra operations together on a 3x3 matrix:
+#Example of using multiple linear algebra operations together on a 3x3 matrix:::
 arr3 = np.array([[12, 20, 23], [12, 13, 4], [5, 6, 10]])
 inverse3 = np.linalg.inv(arr3)
 transpose3 = np.transpose(arr3)
