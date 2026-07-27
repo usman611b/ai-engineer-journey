@@ -141,3 +141,16 @@ print("Trace:", trace3)  # Output: Trace: 35
 #  [5, 6, 10]]
 # Trace = 12 + 13 + 10 = 35
 
+
+#Example of using multiple linear algebra operations together:
+arr = np.array([[1, 2], [3, 4]])
+inverse = np.linalg.inv(arr)
+transpose = np.transpose(arr)
+norm = np.linalg.norm(arr)
+trace = np.trace(arr)
+
+print("Original Matrix:\n", arr)
+print("Inverse:\n", inverse)
+print("Transpose:\n", transpose)
+print("Norm:", norm)
+print("Trace:", trace)
