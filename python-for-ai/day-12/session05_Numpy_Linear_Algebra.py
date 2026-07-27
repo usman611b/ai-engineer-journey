@@ -154,3 +154,16 @@ print("Inverse:\n", inverse)
 print("Transpose:\n", transpose)
 print("Norm:", norm)
 print("Trace:", trace)
+
+#Example of using multiple linear algebra operations together on a 3x3 matrix:
+arr3 = np.array([[12, 20, 23], [12, 13, 4], [5, 6, 10]])
+inverse3 = np.linalg.inv(arr3)
+transpose3 = np.transpose(arr3)
+norm3 = np.linalg.norm(arr3)
+trace3 = np.trace(arr3)
+
+print("Original Matrix:\n", arr3)
+print("Inverse:\n", inverse3)
+print("Transpose:\n", transpose3)
+print("Norm:", norm3)
+print("Trace:", trace3)
