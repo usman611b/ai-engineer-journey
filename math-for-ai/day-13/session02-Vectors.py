@@ -12,7 +12,13 @@ Why do AI models use vectors?
 What is magnitude?
 What is direction?
 Why do dimensions matter?
+#What is normalization?
+What is cosine similarity?
+
+
 """
+#-----------------------------------------------------------------------
+
 #Step 1 — What is a Scalar?
 """Scalars are single numbers.
 Examples:
