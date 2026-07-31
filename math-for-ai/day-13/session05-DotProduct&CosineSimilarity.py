@@ -820,7 +820,7 @@ Cosine Similarity :
 
 Measures similarity using direction only.
 
-That's one of the most important distinctions in AI."""
+That's one of the most important distinctions in AI...."""
 
 
 
