@@ -164,3 +164,26 @@ If we have a dataset with two features, A and B, and B is just 2× A, then the m
 """We can simply calculate the Linearly independency by Row Reduction  After solving the matrix, if we have a row of zeros, then the columns are linearly dependent. If we have no rows of zeros, then the columns are linearly independent.
 if the rank of the matrix is equal to the number of columns, then the columns are linearly independent. If the rank is less than the number of columns, then there is linear dependence.
 """
+
+# Code Implementation
+import numpy as np
+
+A = np.array([
+    [1, 0, 0],
+    [0, 1, 0],
+    [0, 0, 1]
+])
+
+rank = np.linalg.matrix_rank(A) # This function computes the rank of the matrix A, 
+#which is the maximum number of linearly independent column vectors in the matrix. 
+# The rank is a measure of the "non-degenerateness" of the system of linear equations represented by the matrix. 
+# If the rank is equal to the number of columns, it indicates that all columns are linearly independent. 
+# If the rank is less than the number of columns, it indicates that there is linear dependence among the columns.
+
+print("Rank:", rank)
+print("Number of vectors:", A.shape[1])
+
+if rank == A.shape[1]:
+    print("✅ Linearly Independent")
+else:
+    print("❌ Linearly Dependent")

@@ -721,7 +721,7 @@ magnitude_cat = sum(c ** 2 for c in cat) ** 0.5 # output: Magnitude of Cat: 0.87
 magnitude_another = sum(a ** 2 for a in another_model) ** 0.5 # output: Magnitude of Another Model: 8.770960202020245
 
 cosine_similarity = dot_product / (magnitude_cat * magnitude_another)
-print(f"Cosine Similarity of Cat and Another Model: {cosine_similarity}")#Output: Cosine Similarity of Cat and Another Model: 1.0
+print(f"Cosine Similarity of Cat and Another Model: {cosine_similarity}")#Output: Cosine Similarity of Cat and Another Model: 1.0 
 
 """
 Google Search
