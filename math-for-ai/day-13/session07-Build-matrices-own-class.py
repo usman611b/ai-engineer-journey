@@ -147,6 +147,10 @@ print("This is what a neural network layer does -- matrix multiplication.")
 def project(a, b):
     scalar = a.dot(b) / b.dot(b)
     return Vector([scalar * x for x in b.coordinates])
+v1 = Vector([0.274722 , 0, 0.961527])
+v2 = Vector([3, 3, 9])
+result = project(v2, v1)
+print(f"Projection of v2 onto v1: {result}") # output: Projection of v2 onto v1: Vector([0.274722, 0.0, 0.961527])
 
 
 def gram_schmidt(vectors):
