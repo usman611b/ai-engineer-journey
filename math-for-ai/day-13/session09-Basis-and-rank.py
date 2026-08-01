@@ -306,3 +306,24 @@ That's the interpretation AI engineers use."""
 | ⚠️ **Near Rank Deficient** | Rank is almost full, but some columns are **almost duplicates** | Features are very similar but not exactly the same.                                     | Height and Height measured with tiny rounding differences | Model still works, but it becomes unstable. Small changes in data can cause large changes in learned weights. |
 
 """
+#Code implementation of Basis and Rank in Python
+import numpy as np
+
+# Example matrix
+A = np.array([
+    [1, 3, 0],
+    [5, 1, 0],
+    [7, 0, 1]
+])
+
+# Calculate rank
+rank = np.linalg.matrix_rank(A)
+print(f"Rank of the matrix: {rank}")
+
+# Find basis vectors (simplified approach - in practice, you might use SVD or other methods)
+basis_vectors = []
+for i in range(A.shape[1]):
+    if not np.allclose(A[:, i], 0):
+        basis_vectors.append(A[:, i])
+
+print(f"Basis vectors: {basis_vectors}")
