@@ -235,3 +235,5 @@ Identity matrix	    "The boring matrix"	                                The matr
 Broadcasting	    "Magic shape fixing"	                            Stretching a smaller array to match a larger one by repeating along missing dimensions.
 
 Element-wise	    "Regular multiplication"	                        Multiply matching positions. Both arrays must have the same shape (or be broadcastable)."""
+
+#------------------------
