@@ -102,6 +102,23 @@ Matrix_C = np.array([[1, 2], [3, 4]])
 inv_C = np.linalg.inv(Matrix_C)
 print(f"Inverse of Matrix C:\n{inv_C}")
 
+Matrix_3D = np.array([[1, 2, 3], [0, 1, 4], [5, 6, 0]])
+inv_3D = np.linalg.inv(Matrix_3D)
+print(f"Inverse of 3D Matrix:\n{inv_3D}") #Output: Inverse of 3D Matrix:
+# [[-24.   18.    5. ]
+#  [ 20.  -15.   -4. ]
+#  [ -5.    4.    1. ]] here the inverse of the 3D matrix is computed, which can be used to solve systems of equations or perform other linear algebra operations in AI applications.
+
+
+matrix_inv3D = np.array([[-24, 18, 5], [20, -15, -4], [-5, 4, 1 ]])
+print(f"Verification of 3D Matrix Inverse:\n{Matrix_3D @ inv_3D}")
+#Output: Verification of 3D Matrix Inverse:
+# [[ 1.  0.  0.]
+#  [ 0.  1.  0.]
+#  [ 0.  0.  1.]] here the product of the original 3D matrix and its inverse is computed, which results in the identity matrix, confirming that the inverse was calculated correctly.
+
+
+
 Matrix_D = np.array([[1, 2], [2, 4]])
 inv_D = np.linalg.inv(Matrix_D)
 print(f"Inverse of Matrix D:\n{inv_D}") #Output: LinAlgError: Singular matrix here the matrix is singular (determinant is zero), indicating that it does not have an inverse.
