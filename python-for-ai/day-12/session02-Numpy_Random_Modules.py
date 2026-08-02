@@ -223,3 +223,13 @@ arr3d = np.array([[[1, 2], [3, 4]], [[5, 6], [7, 8]]])
 permuted_arr3d = np.random.permutation(arr3d)   
 print("Original 3D array:", arr3d)
 print("Permuted 3D array:", permuted_arr3d) 
+
+#Randon Uniform Distribution
+a = np.random.uniform(0, 1, 5)  # 5 random numbers between 0 and 1
+print(a)
+
+arr2d = np.random.uniform(0, 10, (3, 4))  # 3x4 array of random numbers between 0 and 10
+print(arr2d)
+
+arr3d = np.random.uniform(-5, 5, (2, 3, 4))  # 2x3x4 array of random numbers between -5 and 5
+print(arr3d)
