@@ -252,5 +252,5 @@ Least-squares regression (the standard numerical method)"""
 
 #Code Implementation of Gram-Schmidt Process
 #Code is in the file math-for-ai/day-13/session07-Build-matrices-own-class.py
-
+#-----------------------------------------------------------
 
