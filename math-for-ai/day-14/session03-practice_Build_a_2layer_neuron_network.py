@@ -22,3 +22,7 @@ print(f"Input shape: {inputs.shape}")
 print(f"Hidden layer shape: {hidden.shape}")
 print(f"Output shape: {output.shape}")
 print(f"Output: {output.data}")
+
+#-----------------------------------------
+"""This is what we learned so far and build it apply  it
+"""
