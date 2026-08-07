@@ -8,6 +8,8 @@ SHEARING MATRIX
 
 A shearing transformation changes the SHAPE of an object.
 
+Shearing tilts one axis while keeping the other fixed. It turns rectangles into parallelograms.
+
 It does NOT rotate the object.
 
 It does NOT uniformly scale the object.
