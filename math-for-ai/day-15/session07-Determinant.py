@@ -223,3 +223,10 @@ print(f"det(matrix)       = {det_2x2(matrix):.1f}")
 print("Non-singular: columns are not proportional, space is preserved and orientation is maintained .")
 print(f"det(negative)     = {det_2x2(negative):.1f}")
 print("Negative determinant: area scaling factor is negative, orientation is flipped.")
+
+#By NumPy
+import numpy as np
+
+print(f"det(singular)     = {np.linalg.det(np.array(singular)):.1f}")
+print(f"det(matrix)       = {np.linalg.det(np.array(matrix)):.1f}")
+print(f"det(negative)     = {np.linalg.det(np.array(negative)):.1f}")
