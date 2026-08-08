@@ -208,3 +208,18 @@ This is a very strong foundation. Most students memorize the determinant as:
 
 You now understand its geometric meaning, which is much more valuable for AI.
 """
+
+def det_2x2(matrix):
+    return matrix[0][0] * matrix[1][1] - matrix[0][1] * matrix[1][0]
+
+
+singular = [[1, 2], [2, 4]]
+matrix = [[2, 0], [0, 3]]
+negative = [[0, 1], [-1, 0]]
+
+print(f"det(singular)     = {det_2x2(singular):.1f}")
+print("Singular: columns are proportional, space collapses to a line.")
+print(f"det(matrix)       = {det_2x2(matrix):.1f}")
+print("Non-singular: columns are not proportional, space is preserved and orientation is maintained .")
+print(f"det(negative)     = {det_2x2(negative):.1f}")
+print("Negative determinant: area scaling factor is negative, orientation is flipped.")
