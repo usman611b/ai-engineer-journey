@@ -147,3 +147,5 @@ result2 = scale_then_rotate @ np.array([1.0, 0.0])
 print("Result of rotating then scaling (1,0):", result1)
 print("Result of scaling then rotating (1,0):", result2)
 print(f"Are the two results equal? {np.allclose(result1, result2)}")
+
+#-------------------------------------------------
