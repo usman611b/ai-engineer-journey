@@ -75,10 +75,42 @@ print("Product of individual determinants:", det_individual)
 
 M = np.array([[4, 2], [1, 3]])
 # Characteristic polynomial: det(M - λI) = 0
+#by hand Let's compute the characteristic polynomial:
+# det([[4-λ, 2], [1, 3-λ]]) = (4-λ)(3-λ) - (2)(1) = 12 - 4λ - 3λ + λ² - 2 = λ² - 7λ + 10
+# So the characteristic polynomial is λ² - 7λ + 10 = 0
+# Factoring: (λ - 5)(λ - 2) = 0
+# Therefore, the eigenvalues are λ = 5 and λ = 2.
+
+# For Eigenvectors, we can solve (M - λI)v = 0 for each eigenvalue.
+
+
+# For λ = 5:
+# (M - 5I)v = 0
+# [[4-5, 2], [1, 3-5]]v = 0
+# [[-1, 2], [1, -2]]v = 0
+# This gives us the system of equations:
+# -v1 + 2v2 = 0
+# v1 - 2v2 = 0
+# From the first equation: v1 = 2v2
+# So an eigenvector for λ = 5 is [2, 1] (or any scalar multiple).
+
+
+# For λ = 2:
+# (M - 2I)v = 0
+# [[4-2, 2], [1, 3-2]]v = 0
+# [[2, 2], [1, 1]]v = 0
+# This gives us the system of equations:
+# 2v1 + 2v2 = 0
+# v1 + v2 = 0
+# From the first equation: v1 = -v2
+# So an eigenvector for λ = 2 is [1, -1] (or any scalar multiple).
+
+
+
 Eigenvalues = np.linalg.eigvals(M)
 print("Eigenvalues of M:", Eigenvalues) # Should be [5, 2]
 
 Eigenvectors = np.linalg.eig(M)[1]
-print("Eigenvectors of M:\n", Eigenvectors)
+print("Eigenvectors of M:\n", Eigenvectors) # values corresponding to eigenvalues 5 and 2 is [[0.89442719 0.4472136 ], [0.4472136 0.89442719]]
 #---------------------------------------------
 
