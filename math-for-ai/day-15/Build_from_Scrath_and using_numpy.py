@@ -149,3 +149,28 @@ print("Result of scaling then rotating (1,0):", result2)
 print(f"Are the two results equal? {np.allclose(result1, result2)}")
 
 #-------------------------------------------------
+def rotation_3d_z(theta):
+    c, s = np.cos(theta), np.sin(theta)
+    return np.array([[c, -s, 0], 
+                     [s, c, 0],
+                     [0, 0, 1]])
+
+def rotation_3d_x(theta):
+    c, s = np.cos(theta), np.sin(theta)
+    return np.array([[1, 0, 0], 
+                     [0, c, -s], 
+                     [0, s, c]])
+def rotation_3d_y(theta):
+    c, s = np.cos(theta), np.sin(theta)
+    return np.array([[c, 0, s], 
+                     [0, 1, 0], 
+                     [-s, 0, c]])
+
+point_3d = np.array([1.0, 0.0, 0.0])
+rotated_z = rotation_3d_z(np.pi / 2) @ point_3d
+rotated_x = rotation_3d_x(np.pi / 2) @ point_3d
+rotated_y = rotation_3d_y(np.pi / 2) @ point_3d
+print(f"\n3D point: {point_3d}")
+print(f"Rotate 90 around z: {np.round(rotated_z, 4)}")
+print(f"Rotate 90 around x: {np.round(rotated_x, 4)}")  # Why round function is used is to limit the decimal places for better readability of the output.
+print(f"Rotate 90 around y: {np.round(rotated_y, 4)}")  # Why 4 is used in round function is to limit the decimal places for better readability of the output.
