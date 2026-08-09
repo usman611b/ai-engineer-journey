@@ -52,7 +52,7 @@ Where do the basis vectors go?
 
 Matrix
 
--------------------------
+------------------------------------
 
 Rotation
 
