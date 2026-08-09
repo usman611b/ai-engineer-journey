@@ -19,7 +19,7 @@ There are two ways discussed so far to find its derivative:
 
 
 Analytical derivative
----------------------
+----------------------------------------
 An analytical derivative uses a derivative formula found with calculus.
 
 For f(x) = x**2:
