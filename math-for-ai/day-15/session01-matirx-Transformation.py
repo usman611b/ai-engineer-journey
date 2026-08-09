@@ -267,6 +267,8 @@ ONE-LINE MEMORY
 "A matrix is a transformation machine.
 Its columns are the transformed basis vectors,
 telling us where each basis vector moves in space."
+
+-----------------------------------------------
 """
 
 
