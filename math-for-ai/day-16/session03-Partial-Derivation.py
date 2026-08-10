@@ -198,9 +198,89 @@ Important distinction:
 
 Run this file to see concise numerical examples of the ideas above.
 """
+def f(x, y):
+    return x**2 + 3 * x * y + y**2
 
 
-def gradient_descent_1d(x: float, learning_rate: float, steps: int) -> list[float]:
+def grad(x, y):
+    x_grad = 2 * x + 3 * y
+    y_grad = 2 * y + 3 * x
+
+    return x_grad, y_grad
+
+
+def cal_grad(x, y, learning_rate):
+    for step in range(3):
+        x_gradient, y_gradient = grad(x, y)
+
+        x = x - learning_rate * x_gradient
+        y = y - learning_rate * y_gradient
+
+        print("Step:", step + 1)
+        print("x:", x)
+        print("y:", y)
+        print("Function value:", f(x, y))
+
+
+cal_grad(1, 2, 0.1)
+
+def f(x, y):
+    return 3 * x**2 + 2 * y**2
+
+
+def grad(x, y):
+    x_grad = 6 * x
+    y_grad = 4 * y
+
+    return x_grad, y_grad
+
+
+def cal_grad(x, y, learning_rate, steps):
+    for step in range(steps):
+        x_gradient, y_gradient = grad(x, y)
+
+        x = x - learning_rate * x_gradient
+        y = y - learning_rate * y_gradient
+
+        print("Step:", step + 1)
+        print("x:", x)
+        print("y:", y)
+        print("Loss:", f(x, y))
+
+    return x, y
+
+
+final_x, final_y = cal_grad(2, 3, 0.1, 3)
+
+print("Final x:", final_x)
+print("Final y:", final_y)
+print("Final loss:", f(final_x, final_y))
+
+def numerical_gradient(f, point, h=1e-7):
+    gradient = []
+
+    for i in range(len(point)):
+        point_plus = list(point)
+        point_minus = list(point)
+
+        point_plus[i] += h
+        point_minus[i] -= h
+
+        partial = (
+            f(point_plus) - f(point_minus)
+        ) / (2 * h)
+
+        gradient.append(partial)
+
+    return gradient
+def f_multi(point):
+    x, y = point
+    return x**2 + 3*x*y + y**2
+
+grad_x , grad_y = numerical_gradient(f_multi, [1.0, 2.0])
+print(f"Numerical gradient at (1,2): ({grad_x:.4f}, {grad_y:.4f})")
+
+def gradient_descent_1d(x: float, learning_rate: float, steps: int) -> list[float]: # -> list[float]:means the function returns a list of floats 
     """Run gradient descent on f(x) = x^2 and return every x value."""
     history = [x]
     for _ in range(steps):
@@ -224,14 +304,14 @@ def apply_gradient_step(
     x: float, y: float, gradient: tuple[float, float], learning_rate: float
 ) -> tuple[float, float]:
     """Apply one two-variable gradient-descent update."""
-    dx, dy = gradient
+    dx, dy = gradient 
     return x - learning_rate * dx, y - learning_rate * dy
 
 
 if __name__ == "__main__":
     print("Gradient descent on f(x) = x^2 (start=5, lr=0.1):")
     values = gradient_descent_1d(x=5.0, learning_rate=0.1, steps=3)
-    for step, x_value in enumerate(values):
+    for step, x_value in enumerate(values): # enumerate(values) returns both the index (step) and the value (x_value) of each element in the list values
         print(f"  step {step}: x={x_value:g}, f(x)={x_value**2:g}")
 
     point = (1.0, 2.0)
@@ -248,3 +328,4 @@ if __name__ == "__main__":
     for lr in (0.1, 0.01, 1.0, 0.0):
         new_x = gradient_descent_1d(x=5.0, learning_rate=lr, steps=1)[-1]
         print(f"  lr={lr:g}: x -> {new_x:g}")
+#----
