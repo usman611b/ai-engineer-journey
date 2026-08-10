@@ -374,7 +374,7 @@ Automatic differentiation:
 
 
 12. KEY TAKEAWAYS
------------------
+-------------------------------------
 
 * Use the chain rule when one operation feeds into another operation.
 * The total derivative is the product of the local derivatives along the path.
