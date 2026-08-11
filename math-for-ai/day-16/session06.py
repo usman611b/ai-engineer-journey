@@ -29,10 +29,3 @@ for step in range(5):
         "x:", round(x_momentum, 4),
         "velocity:", round(velocity, 4),
     )
-"""
-ugvuuh jh ughuvytfyusdrtyjnbxdrtyhbvxdrtyhvdt
-ftyujty7ijht78ikjbgy89ok89olky8
-tyhftyujt7ijhgy78ijhiknvft7ikjvgy9ok89okhy7
-hghb vvh7rfghujkmncfrt678ijbvcrtyhdryhdr67ujbr567uhr67ijhgtytfvji87
-hvcfthbvcfghb fghjm
-"""
