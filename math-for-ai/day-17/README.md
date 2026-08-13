@@ -422,7 +422,7 @@ backpropagation → calculates gradients
 optimiser       → uses gradients to update weights
 ```
 
------
+--------------------------------
 
 ## 13. Momentum: remember previous movement
 
