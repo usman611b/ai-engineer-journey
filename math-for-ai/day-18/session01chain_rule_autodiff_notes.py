@@ -3,7 +3,7 @@ Lesson 5: Chain Rule & Automatic Differentiation
 ================================================
 
 Scope of these notes
---------------------
+------------------------------------------------
 These notes cover everything learned from the start of Lesson 5 up to the
 point just BEFORE topological sort implementation.
 
