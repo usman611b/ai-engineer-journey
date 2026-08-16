@@ -259,7 +259,7 @@ def demo_random_variable() -> None:
 
 # ==================================================================
 # 5. DISCRETE VERSUS CONTINUOUS RANDOM VARIABLES
-# =============================================================================
+# =================================================================
 
 # DISCRETE random variables have separate, countable possible values.
 # Examples: die result, number of emails, token ID, class label encoding.
