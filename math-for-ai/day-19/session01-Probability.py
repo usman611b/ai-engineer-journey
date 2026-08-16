@@ -281,7 +281,7 @@ def demo_discrete_vs_continuous(rng: Random) -> None:
     print("Continuous temperature model:", [round(x, 4) for x in temperature_samples])
 
 
-# =============================================================================
+# =============================================================
 # 6. PMF VERSUS PDF
 # =============================================================================
 
