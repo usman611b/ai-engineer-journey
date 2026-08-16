@@ -257,7 +257,7 @@ def demo_random_variable() -> None:
 # prediction error, training loss, or a model's uncertain future output.
 
 
-# =============================================================================
+# ==================================================================
 # 5. DISCRETE VERSUS CONTINUOUS RANDOM VARIABLES
 # =============================================================================
 
