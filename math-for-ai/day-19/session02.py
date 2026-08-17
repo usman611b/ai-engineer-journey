@@ -16,5 +16,5 @@ uniform_pdf(11, 0, 10)  # Should return 0.0
 
 
 
-#-------------------------------------------
+
 # so the uniform pdf is a constant function between a and b, and 0 outside that range.
