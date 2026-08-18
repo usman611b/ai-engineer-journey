@@ -7,7 +7,7 @@ def uniform_pdf(x, a, b):
     if a <= x <= b:
         return 1.0 / (b - a)
     return 0.0
-####
+########
 uniform_pdf(6, 0, 10)  # Should return 0.1
 uniform_pdf(0, 0, 10)  # Should return 0.1
 uniform_pdf(10, 0, 10)  # Should return 0.1
