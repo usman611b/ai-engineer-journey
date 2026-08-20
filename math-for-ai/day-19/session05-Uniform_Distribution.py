@@ -271,7 +271,7 @@ Solutions:
 2. Desired width 4 / total width 10 = 0.4.
 3. No. Exact-point probability is zero; 0.1 is density.
 4. Total area must stay 1, so increasing width requires decreasing height.
-5. Random initialization or uniformly sampled augmentation settings.
+5. Random initialization or uniformly sampled augmentation settings.....
 """)
 
 
