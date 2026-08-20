@@ -14,7 +14,7 @@ Run with:
 
 ===============================================================================
 1. THE BELL CURVE
-===============================================================================
+===============================================================================-
 
 Many measurements cluster around a center. Human heights, repeated measurement
 errors, and aggregated noise often behave approximately like:
