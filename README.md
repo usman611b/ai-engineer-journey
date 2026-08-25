@@ -12,6 +12,8 @@
 ![Deep Learning](https://img.shields.io/badge/Deep_Learning-111827?style=flat-square&logo=pytorch&logoColor=EE4C2C)
 ![Systems](https://img.shields.io/badge/Systems_Thinking-111827?style=flat-square&logo=linux&logoColor=FCC624)
 
+[![AI Lab Python Sanity](https://github.com/usman611b/ai-engineer-journey/actions/workflows/python-sanity.yml/badge.svg)](https://github.com/usman611b/ai-engineer-journey/actions/workflows/python-sanity.yml)
+
 </div>
 
 ---
