@@ -37,12 +37,16 @@ jobs:
 
       - name: Compile learning modules
         run: |
-          python -m compileall -q python-for-ai math-for-ai
+          python -m compileall -q -x '(^|/)(\.venv|venv|__pycache__)(/|$)' python-for-ai math-for-ai
 
       - name: Check for unresolved merge markers
         shell: bash
         run: |
-          if grep -R -n -E '^(<<<<<<<|=======|>>>>>>>)' python-for-ai math-for-ai --include='*.py'; then
+          if grep -R -n -E '^(<<<<<<< .+|>>>>>>> .+|=======$)' \
+            python-for-ai math-for-ai \
+            --include='*.py' \
+            --exclude-dir='.venv' \
+            --exclude-dir='venv'; then
             echo 'Unresolved merge markers found.'
             exit 1
           fi
