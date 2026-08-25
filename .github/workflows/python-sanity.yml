@@ -1,0 +1,48 @@
+name: AI Lab Python Sanity
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**/*.py'
+      - '.github/workflows/python-sanity.yml'
+  pull_request:
+    paths:
+      - '**/*.py'
+      - '.github/workflows/python-sanity.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  compile:
+    name: Compile Python (${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.11', '3.12']
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Show Python version
+        run: python --version
+
+      - name: Compile learning modules
+        run: |
+          python -m compileall -q python-for-ai math-for-ai
+
+      - name: Check for unresolved merge markers
+        shell: bash
+        run: |
+          if grep -R -n -E '^(<<<<<<<|=======|>>>>>>>)' python-for-ai math-for-ai --include='*.py'; then
+            echo 'Unresolved merge markers found.'
+            exit 1
+          fi
