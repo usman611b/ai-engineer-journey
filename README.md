@@ -4,185 +4,291 @@
 
 ### From first principles → intelligent systems
 
-**A public engineering lab for mathematics, machine learning, deep learning, data systems, and production AI.**
+**A public engineering lab for building AI understanding from the bottom of the stack upward.**
 
-![Python](https://img.shields.io/badge/Python-111827?style=flat-square&logo=python&logoColor=FFD43B)
-![Math for AI](https://img.shields.io/badge/Math_for_AI-111827?style=flat-square&logo=wolfram&logoColor=FF6B35)
-![Machine Learning](https://img.shields.io/badge/Machine_Learning-111827?style=flat-square&logo=scikitlearn&logoColor=F7931E)
-![Deep Learning](https://img.shields.io/badge/Deep_Learning-111827?style=flat-square&logo=pytorch&logoColor=EE4C2C)
-![Systems](https://img.shields.io/badge/Systems_Thinking-111827?style=flat-square&logo=linux&logoColor=FCC624)
-
+[![Python](https://img.shields.io/badge/Python-111827?style=flat-square&logo=python&logoColor=FFD43B)](./python-for-ai)
+[![Math for AI](https://img.shields.io/badge/Math_for_AI-111827?style=flat-square&logo=wolfram&logoColor=FF6B35)](./math-for-ai)
+[![Machine Learning](https://img.shields.io/badge/Machine_Learning-planned-111827?style=flat-square&logo=scikitlearn&logoColor=F7931E)](./ROADMAP.md)
+[![Deep Learning](https://img.shields.io/badge/Deep_Learning-planned-111827?style=flat-square&logo=pytorch&logoColor=EE4C2C)](./ROADMAP.md)
+[![Big Data](https://img.shields.io/badge/Big_Data-planned-111827?style=flat-square&logo=apachespark&logoColor=E25A1C)](./ROADMAP.md)
 [![AI Lab Python Sanity](https://github.com/usman611b/ai-engineer-journey/actions/workflows/python-sanity.yml/badge.svg)](https://github.com/usman611b/ai-engineer-journey/actions/workflows/python-sanity.yml)
+
+**21 day folders · 2 active foundation tracks · 90+ math session/practice artifacts · growing in public**
+
+[Roadmap](./ROADMAP.md) · [Python Track](./python-for-ai/README.md) · [Math Track](./math-for-ai/README.md) · [Current Lab](./math-for-ai/day-21) · [Portfolio](https://www.usmanalii.com/)
 
 </div>
 
 ---
 
-## What this repository is
+## The idea behind this repository
 
-This is not a checklist of technologies I want to claim.
+This repository is not a list of technologies I want to be associated with.
 
-It is a **working record of how I build understanding**: concepts are unpacked, implemented, tested, compared, broken, debugged, and connected to the larger AI engineering stack.
+It is the **evidence trail of how I am building the stack underneath intelligent systems**.
 
-The long-term question behind the repository is:
-
-> **How do we move from mathematical ideas and learning algorithms to intelligent systems that are useful, reliable, and deployable?**
-
-That means the repository grows in layers: foundations first, then models, then systems.
-
----
-
-## Current lab
-
-### Optimization & learning dynamics
-
-Recent work focuses on the behavior of optimization algorithms rather than treating them as black-box library calls.
-
-Topics currently being explored include:
-
-- gradient-based optimization;
-- batch, stochastic, and mini-batch updates;
-- momentum;
-- Adam;
-- learning-rate behavior and schedules;
-- convex vs non-convex optimization;
-- saddle points and plateaus;
-- sharp vs flat minima;
-- loss landscapes;
-- Rosenbrock-style benchmark problems;
-- optimizer comparison through executable experiments.
-
-**Working loop:**
+Instead of jumping directly to high-level frameworks, I am working upward through the layers that make those frameworks understandable:
 
 ```text
-intuition → mathematics → implementation → experiment → interpretation
+programming
+    ↓
+mathematical representation
+    ↓
+calculus + gradients
+    ↓
+automatic differentiation
+    ↓
+probability + uncertainty
+    ↓
+Bayesian reasoning
+    ↓
+optimization
+    ↓
+machine learning
+    ↓
+deep learning
+    ↓
+data + distributed systems
+    ↓
+LLMs / agents / intelligent applications
+    ↓
+MLOps + production AI
 ```
 
-Explore the active material in [`math-for-ai/day-21`](./math-for-ai/day-21).
+The long-term engineering question is simple:
+
+> **What has to be understood, implemented, tested, connected, and operated before an AI system becomes genuinely useful?**
+
+That question is the organizing principle of the repository.
 
 ---
 
-## Repository map
+# Current state
+
+| Track | Repository evidence | Status | What it is building toward |
+|---|---|---:|---|
+| **Python engineering** | [`python-for-ai/day-01`](./python-for-ai/day-01) → [`day-12`](./python-for-ai/day-12) | ✅ Foundation built | Reliable implementation, debugging, numerical work, model code |
+| **Linear algebra** | [`math-for-ai/day-13`](./math-for-ai/day-13) → [`day-15`](./math-for-ai/day-15) | ✅ Covered | Vectors, representations, transformations, model geometry |
+| **Calculus** | [`day-16`](./math-for-ai/day-16) → [`day-17`](./math-for-ai/day-17) | ✅ Covered | Gradients, curvature, chain rule, backpropagation |
+| **Autodiff + neural mechanics** | [`day-18`](./math-for-ai/day-18) | ✅ Covered | Computational graphs, backward pass, MLP mechanics |
+| **Probability** | [`day-19`](./math-for-ai/day-19) | ✅ Covered | Distributions, uncertainty, log probabilities, cross-entropy |
+| **Bayesian reasoning** | [`day-20`](./math-for-ai/day-20) | ✅ Covered | Updating belief, MLE/MAP, uncertainty, Bayesian comparison |
+| **Optimization** | [`day-21`](./math-for-ai/day-21) | 🚧 Current deep-dive | Training dynamics, optimizer behavior, loss landscapes |
+| **Machine learning** | Roadmap phase | ⏳ Planned | Classical supervised/unsupervised learning + evaluation |
+| **Deep learning** | Roadmap phase | ⏳ Planned | Modern neural networks, CV/NLP, training systems |
+| **Big data + data systems** | Roadmap phase | ⏳ Planned | Scalable processing, distributed data pipelines, feature systems |
+| **LLM / agents / MLOps** | Roadmap phase | ⏳ Planned | Production intelligent systems |
+
+**Legend:** ✅ implemented/documented · 🚧 active · ⏳ planned
+
+> Planned phases are intentionally shown as planned. The repository only claims a layer when there is real code, notes, experiments, or systems behind it.
+
+---
+
+# Current lab — optimization & learning dynamics
+
+The active technical focus in the repository is not simply “using Adam.” It is understanding **why optimization behaves differently across landscapes and update rules**.
+
+The current lab includes:
+
+- gradient descent mechanics;
+- learning-rate sensitivity;
+- batch vs stochastic vs mini-batch updates;
+- momentum and velocity accumulation;
+- Adam first/second moments;
+- Adam bias correction;
+- Adam implemented from scratch;
+- learning-rate schedules;
+- convex vs non-convex objectives;
+- saddle points and plateaus;
+- loss landscapes;
+- sharp vs flat minima;
+- the Rosenbrock function as an optimizer stress test;
+- vanilla GD vs momentum on Rosenbrock;
+- GD vs Momentum vs Adam comparisons;
+- small experiments designed to explain behavior rather than only return a final number.
+
+→ Explore [`math-for-ai/day-21`](./math-for-ai/day-21)
+
+---
+
+# Repository architecture
 
 ```text
 ai-engineer-journey/
 │
-├── python-for-ai/      # Language + engineering foundations
-├── math-for-ai/        # Mathematics, probability, autodiff, Bayes, optimization
-└── README.md            # Lab index and engineering narrative
+├── README.md                    # Command center / current state
+├── ROADMAP.md                   # Full AI engineering progression
+├── .github/
+│   └── workflows/
+│       └── python-sanity.yml    # Automated Python quality gate
+│
+├── python-for-ai/
+│   ├── README.md
+│   └── day-01 ... day-12        # Programming + Python engineering foundation
+│
+└── math-for-ai/
+    ├── README.md                # Detailed math curriculum + concept map
+    ├── day-13                   # Vector spaces, matrices, similarity, basis
+    ├── day-14                   # Matrix operations + neural-network bridge
+    ├── day-15                   # Transformations + eigen intuition
+    ├── day-16                   # Derivatives, chain rule, Hessian, optimizers
+    ├── day-17                   # Second-order ideas, integrals, backpropagation
+    ├── day-18                   # Autodiff, activations, MLP, XOR, gradient checks
+    ├── day-19                   # Probability, distributions, softmax, cross-entropy
+    ├── day-20                   # Bayes, MLE/MAP, Beta uncertainty, A/B testing
+    └── day-21                   # Optimization deep-dive
 ```
 
-The repository is intentionally expanded only when the corresponding material is actually being studied and implemented. Future layers such as machine learning, deep learning, data systems, LLMs, agents, and MLOps will appear as real work is added — not as empty folders.
+The repository expands only when the next layer becomes real work. I do not create empty `deep-learning/`, `llm/`, or `agents/` folders simply to make the repository look larger.
 
 ---
 
-## Foundation track
+# How a concept becomes evidence
 
-### Python for AI
+The learning unit is not “I read a chapter.” A strong topic should leave an engineering artifact behind.
 
-The Python track builds the programming habits needed to reason about and implement AI systems rather than only operate notebooks.
+```text
+QUESTION
+   ↓
+INTUITION
+   ↓
+MATHEMATICS
+   ↓
+NUMERICAL EXAMPLE
+   ↓
+FROM-SCRATCH CODE
+   ↓
+EXPERIMENT / COMPARISON
+   ↓
+INTERPRETATION
+   ↓
+CONNECTION TO THE LARGER AI SYSTEM
+```
 
-It covers language fundamentals, functions, object-oriented design, iteration patterns, error handling, concurrency concepts, and practical Python engineering.
-
-→ [`python-for-ai/`](./python-for-ai)
-
-### Mathematics for AI
-
-The mathematics track is where abstract ideas are turned into executable intuition.
-
-The current material spans topics such as:
-
-- linear algebra and vector reasoning;
-- probability and distributions;
-- expected value and variance;
-- Gaussian behavior and uncertainty;
-- Bayes' theorem;
-- likelihood, MLE, MAP, and Beta distributions;
-- automatic differentiation and computational graphs;
-- gradient-based optimization and optimizer behavior.
-
-→ [`math-for-ai/`](./math-for-ai)
-
----
-
-## How I use this repo
-
-Every serious topic should leave behind more than a note.
-
-A strong module aims to contain some combination of:
-
-| Evidence | What it proves |
+| Evidence type | What it demonstrates |
 |---|---|
-| Theory notes | I can explain the idea in my own words |
-| From-scratch implementation | I understand the mechanism below the library call |
-| Numerical example | I can trace the mathematics concretely |
-| Experiment | I can test assumptions instead of only repeating them |
-| Comparison | I can reason about trade-offs |
-| Visualization | I can inspect behavior, not just final numbers |
-| Reflection | I can explain what failed, surprised me, or changed my understanding |
-
-The point is to leave an **engineering trail**, not just completed exercises.
+| **Plain-language explanation** | I can explain the mechanism instead of repeating notation |
+| **Derivation / calculation** | I can trace where the result comes from |
+| **From-scratch implementation** | I understand what the library abstraction is hiding |
+| **Numerical example** | I can follow the mechanism concretely |
+| **Experiment** | I can test a claim rather than only accept it |
+| **Comparison** | I can reason about trade-offs and failure modes |
+| **Visualization** | I can inspect behavior across a space or over time |
+| **Reflection** | I can explain what changed in my understanding |
 
 ---
 
-## Learning architecture
+# Foundation dependency map
 
-```text
-FOUNDATIONS
-  ↓
-DATA + REPRESENTATION
-  ↓
-MACHINE LEARNING
-  ↓
-DEEP LEARNING
-  ↓
-INTELLIGENT APPLICATIONS
-  ↓
-INFRASTRUCTURE + MLOPS
-  ↓
-PRODUCTION AI SYSTEMS
+```mermaid
+flowchart LR
+    PY[Python Engineering] --> LA[Linear Algebra]
+    LA --> CALC[Calculus]
+    CALC --> AD[Automatic Differentiation]
+    AD --> NN[Neural Mechanics]
+    LA --> PROB[Probability]
+    PROB --> BAYES[Bayesian Reasoning]
+    CALC --> OPT[Optimization]
+    AD --> OPT
+    PROB --> OPT
+    BAYES --> ML[Machine Learning]
+    OPT --> ML
+    ML --> DL[Deep Learning]
+    DL --> DATA[Data + Distributed Systems]
+    DATA --> LLM[LLM / Agent Systems]
+    DL --> LLM
+    LLM --> PROD[Production AI / MLOps]
 ```
 
-I am intentionally moving through this stack from the bottom upward so that later abstractions have something solid underneath them.
+This is why the math track is not separate from engineering. Each layer removes a black box from the next one.
 
 ---
 
-## Build log philosophy
+# What is already implemented in the math track
 
-Commits in this repository are meant to describe **what changed in the understanding**, not simply say `update files`.
+The detailed curriculum lives in [`math-for-ai/README.md`](./math-for-ai/README.md), but the progression currently looks like this:
 
-Examples from the current optimization work include:
+| Day | Core theme | Representative concepts |
+|---:|---|---|
+| **13** | Linear Algebra I | vectors, matrices, dot product, cosine similarity, projection, basis, rank, Gram–Schmidt |
+| **14** | Linear Algebra II | matrix operations, determinant, inverse, 2-layer neuron-network practice |
+| **15** | Transformations | rotation, scaling, shearing, reflection, composition, determinant geometry, eigenvectors/eigenvalues |
+| **16** | Calculus for learning | derivatives, numerical vs analytical gradients, partials, chain rule, Hessian, optimizer connection |
+| **17** | Gradient bridge | second-order optimization, integrals, backpropagation |
+| **18** | Autodiff + neural mechanics | computational graphs, backward pass, operations, activations, MLP, XOR, gradient checking, PyTorch comparison |
+| **19** | Probability | distributions, expectation, variance, joint/marginal probability, CLT, log-probability, softmax, cross-entropy, sampling |
+| **20** | Bayesian inference | Bayes, base rates, sequential updating, Naive Bayes, smoothing, MLE, MAP, Beta uncertainty, Bayesian A/B testing |
+| **21** | Optimization | GD, SGD, mini-batch, momentum, Adam, schedules, landscapes, minima, Rosenbrock experiments |
 
-```text
-Day 21 Session 09: explain convex and non-convex optimization
-Day 21 Session 11: explain loss landscapes
-Day 21 Session 14: derive the Rosenbrock gradient
-Day 21 Session 17: compare GD, momentum, and Adam
-Day 21 Session 18: add optimization experiments and practice
-```
-
-That commit history is part of the learning record.
-
----
-
-## What comes next
-
-The next major layers will be added when they become active work:
-
-**Data analysis → Machine learning → Deep learning → Computer vision / NLP → LLM systems → Agents → MLOps / deployment → production-scale projects**
-
-The goal is not speed through the labels. The goal is to build enough understanding that each new layer connects naturally to the previous one.
+→ [`Open the full Math for AI curriculum`](./math-for-ai/README.md)
 
 ---
 
-## Principles
+# Engineering quality gate
 
-- **Understand before abstracting.**
-- **Implement before depending.**
-- **Experiment before concluding.**
-- **Debug instead of hiding failure.**
-- **Connect every model to the system around it.**
-- **Keep the evidence.**
+The repository includes a GitHub Actions workflow that checks the Python learning code on multiple Python versions.
+
+Current CI responsibilities:
+
+- compile Python modules under the active learning tracks;
+- run against Python 3.11 and 3.12;
+- catch genuine unresolved Git merge markers;
+- ignore local virtual-environment artifacts during merge-marker scanning.
+
+→ [`.github/workflows/python-sanity.yml`](./.github/workflows/python-sanity.yml)
+
+The goal is simple: **learning code should still be treated like code.**
+
+---
+
+# The full roadmap
+
+The repository is designed around phase gates rather than buzzword collection.
+
+| Phase | Layer | State | Exit evidence |
+|---:|---|---:|---|
+| **0** | Python engineering | ✅ | clean Python, reusable abstractions, numerical coding confidence |
+| **1** | Math foundations | 🚧 | executable intuition across linear algebra, calculus, probability, Bayes, optimization |
+| **2** | Data + scientific Python | ⏳ | data analysis pipeline + numerical experimentation |
+| **3** | Classical ML | ⏳ | models from scratch + evaluation + end-to-end ML project |
+| **4** | Deep Learning | ⏳ | training loops + modern architectures + experiments |
+| **5** | CV / NLP | ⏳ | domain-specific deep-learning systems |
+| **6** | Big Data + distributed data | ⏳ | scalable processing + distributed pipeline project |
+| **7** | LLM systems | ⏳ | embeddings, retrieval, RAG, evaluation, tool use |
+| **8** | Agents | ⏳ | stateful tool-using workflow with reliability controls |
+| **9** | MLOps + AI infrastructure | ⏳ | packaging, deployment, monitoring, reproducibility, CI/CD |
+| **10** | Production capstones | ⏳ | systems that integrate model + data + software + infrastructure |
+
+The detailed build gates, questions, and deliverables for every phase are in [`ROADMAP.md`](./ROADMAP.md).
+
+---
+
+# Navigation
+
+If you are opening the repository for the first time:
+
+1. **Start here** — this README explains the architecture and current state.
+2. Open [`ROADMAP.md`](./ROADMAP.md) for the complete progression.
+3. Open [`python-for-ai/README.md`](./python-for-ai/README.md) for the programming foundation.
+4. Open [`math-for-ai/README.md`](./math-for-ai/README.md) for the detailed mathematical curriculum.
+5. Inspect [`math-for-ai/day-21`](./math-for-ai/day-21) for the current active lab.
+6. Browse the commit history to see how the material evolved session by session.
+
+---
+
+# Principles
+
+> **Understand before abstracting.**  
+> **Implement before depending.**  
+> **Experiment before concluding.**  
+> **Debug instead of hiding failure.**  
+> **Connect the model to the system around it.**  
+> **Keep the evidence.**
+
+The objective is not to move through AI labels as quickly as possible.
+
+The objective is to become capable of moving across the entire path — **from mathematical mechanism to model behavior to engineered intelligent system** — without treating the layers in between as magic.
 
 ---
 
@@ -190,6 +296,6 @@ The goal is not speed through the labels. The goal is to build enough understand
 
 ### Engineering, evidenced.
 
-[GitHub Profile](https://github.com/usman611b) · [Portfolio](https://www.usmanalii.com/)
+[GitHub Profile](https://github.com/usman611b) · [Portfolio](https://www.usmanalii.com/) · [Full Roadmap](./ROADMAP.md)
 
 </div>
