@@ -49,7 +49,7 @@ At exact [0,0] with all states zero, all deterministic implementations remain
 there. The slight nonzero start is essential.
 
 EXPERIMENT 4: EXPONENTIAL DECAY
--------------------------------
+------------------------------------------------
 Use:
 
     lr_t=lr_0*gamma^t
