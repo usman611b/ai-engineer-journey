@@ -22,7 +22,7 @@ Do not assume numerical order alone proves the outcome; run the experiment.
 The largest stable rate depends on the start, loss geometry, and step budget.
 
 EXPERIMENT 2: MOMENTUM SWEEP
-----------------------------
+--------------------------------------------
 Compare beta values:
 
     [0.0, 0.5, 0.9, 0.99]
