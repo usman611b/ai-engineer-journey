@@ -91,7 +91,7 @@ PRACTICE QUESTIONS WITH ANSWERS
    History reveals speed, oscillation, stalls, and divergence along the path.
 
 RUNNING THIS FILE
------------------
+--------------------------------------------
 The main block executes all four experiments using only Python's standard
 library. Results are printed as tables. Change step counts or hyperparameters
 and rerun to extend the investigation.
