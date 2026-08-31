@@ -33,7 +33,7 @@ stale movement and overshoot. Learning rate and beta must be interpreted
 together.
 
 EXPERIMENT 3: SADDLE ESCAPE
----------------------------
+---------------------------------------------
 Use:
 
     f(x,y)=x^2-y^2
