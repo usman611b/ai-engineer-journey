@@ -9,7 +9,7 @@ only a summary: it supplies four complete problems, predictions, implementations
 measurements, interpretation guidance, and answer checks.
 
 EXPERIMENT 1: LEARNING-RATE SWEEP
----------------------------------
+-------------------------------------------------
 Question: how does vanilla GD behave on Rosenbrock with rates:
 
     [0.0001, 0.0005, 0.001, 0.005, 0.01]
