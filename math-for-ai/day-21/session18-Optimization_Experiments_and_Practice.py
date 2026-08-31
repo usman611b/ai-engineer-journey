@@ -59,7 +59,7 @@ larger early movement with smaller late refinement, but overly aggressive
 gamma can freeze training early.
 
 PRACTICE QUESTIONS WITH ANSWERS
--------------------------------
+------------------------------------------------
 1. What does a gradient provide?
    It gives the direction of steepest local increase and a slope magnitude.
    Gradient descent uses the negative direction.
