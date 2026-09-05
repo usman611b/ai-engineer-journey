@@ -9,13 +9,13 @@
 [![Python](https://img.shields.io/badge/Python-111827?style=flat-square&logo=python&logoColor=FFD43B)](./python-for-ai)
 [![Math for AI](https://img.shields.io/badge/Math_for_AI-111827?style=flat-square&logo=wolfram&logoColor=FF6B35)](./math-for-ai)
 [![Machine Learning](https://img.shields.io/badge/Machine_Learning-planned-111827?style=flat-square&logo=scikitlearn&logoColor=F7931E)](./ROADMAP.md)
-[![Deep Learning](https://img.shields.io/badge/Deep_Learning-planned-111827?style=flat-square&logo=pytorch&logoColor=EE4C2C)](./ROADMAP.md)
+[![Deep Learning](https://img.shields.io/badge/Deep_Learning-course_track-111827?style=flat-square&logo=pytorch&logoColor=EE4C2C)](./deep-learning/README.md)
 [![Big Data](https://img.shields.io/badge/Big_Data-planned-111827?style=flat-square&logo=apachespark&logoColor=E25A1C)](./ROADMAP.md)
 [![AI Lab Python Sanity](https://github.com/usman611b/ai-engineer-journey/actions/workflows/python-sanity.yml/badge.svg)](https://github.com/usman611b/ai-engineer-journey/actions/workflows/python-sanity.yml)
 
 **21 day folders · 2 active foundation tracks · 90+ math session/practice artifacts · growing in public**
 
-[Roadmap](./ROADMAP.md) · [Python Track](./python-for-ai/README.md) · [Math Track](./math-for-ai/README.md) · [Current Lab](./math-for-ai/day-21) · [Portfolio](https://www.usmanalii.com/)
+[Roadmap](./ROADMAP.md) · [Python Track](./python-for-ai/README.md) · [Math Track](./math-for-ai/README.md) · [Deep Learning Track](./deep-learning/README.md) · [Current Lab](./math-for-ai/day-21) · [Portfolio](https://www.usmanalii.com/)
 
 </div>
 
@@ -75,7 +75,7 @@ That question is the organizing principle of the repository.
 | **Bayesian reasoning** | [`day-20`](./math-for-ai/day-20) | ✅ Covered | Updating belief, MLE/MAP, uncertainty, Bayesian comparison |
 | **Optimization** | [`day-21`](./math-for-ai/day-21) | 🚧 Current deep-dive | Training dynamics, optimizer behavior, loss landscapes |
 | **Machine learning** | Roadmap phase | ⏳ Planned | Classical supervised/unsupervised learning + evaluation |
-| **Deep learning** | Roadmap phase | ⏳ Planned | Modern neural networks, CV/NLP, training systems |
+| **Deep learning** | [`deep-learning`](./deep-learning) | 🧭 Course track initiated | 7th-semester theory/labs connected to modern neural networks and training systems |
 | **Big data + data systems** | Roadmap phase | ⏳ Planned | Scalable processing, distributed data pipelines, feature systems |
 | **LLM / agents / MLOps** | Roadmap phase | ⏳ Planned | Production intelligent systems |
 
@@ -127,20 +127,23 @@ ai-engineer-journey/
 │   ├── README.md
 │   └── day-01 ... day-12        # Programming + Python engineering foundation
 │
-└── math-for-ai/
-    ├── README.md                # Detailed math curriculum + concept map
-    ├── day-13                   # Vector spaces, matrices, similarity, basis
-    ├── day-14                   # Matrix operations + neural-network bridge
-    ├── day-15                   # Transformations + eigen intuition
-    ├── day-16                   # Derivatives, chain rule, Hessian, optimizers
-    ├── day-17                   # Second-order ideas, integrals, backpropagation
-    ├── day-18                   # Autodiff, activations, MLP, XOR, gradient checks
-    ├── day-19                   # Probability, distributions, softmax, cross-entropy
-    ├── day-20                   # Bayes, MLE/MAP, Beta uncertainty, A/B testing
-    └── day-21                   # Optimization deep-dive
+├── math-for-ai/
+│   ├── README.md                # Detailed math curriculum + concept map
+│   ├── day-13                   # Vector spaces, matrices, similarity, basis
+│   ├── day-14                   # Matrix operations + neural-network bridge
+│   ├── day-15                   # Transformations + eigen intuition
+│   ├── day-16                   # Derivatives, chain rule, Hessian, optimizers
+│   ├── day-17                   # Second-order ideas, integrals, backpropagation
+│   ├── day-18                   # Autodiff, activations, MLP, XOR, gradient checks
+│   ├── day-19                   # Probability, distributions, softmax, cross-entropy
+│   ├── day-20                   # Bayes, MLE/MAP, Beta uncertainty, A/B testing
+│   └── day-21                   # Optimization deep-dive
+│
+└── deep-learning/
+    └── README.md                # 7th-semester DL track, method, and evidence standard
 ```
 
-The repository expands only when the next layer becomes real work. I do not create empty `deep-learning/`, `llm/`, or `agents/` folders simply to make the repository look larger.
+The repository expands only when the next layer becomes real work. The `deep-learning/` track was added when the dedicated 7th-semester course began; future tracks will likewise be added only when they contain meaningful work.
 
 ---
 
